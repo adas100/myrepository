@@ -40,7 +40,8 @@ airports.dca = { name: "Washington - National", coords: {lat: 38.8514, lng: 77.0
 airports.las = { name: "Las Vegas - McCarran", coords: {lat: 36.0800, lng: 115.1522} };
 airports.lax = { name: "Los Angeles", coords: {lat: 33.9428, lng: 118.4092} };
 airports.hsh = { name: "Las Vegas - Henderson", coords: {lat: 35.9728, lng: 115.1344} };
-airports.1g4 = { name: "Peach Springs - Grand Canyon West", coords: {lat: 35.9861, lng: 113.8169} };
+// changed grand canyon west from 1g4 to gcw
+airports.gcw = { name: "Peach Springs - Grand Canyon West", coords: {lat: 35.9861, lng: 113.8169} };
 
 // europe
 airports.fco = { name: "Rome - Fiumicino", coords: {lat: 41.8044, lng: 12.2508} };
@@ -387,7 +388,7 @@ function initMap() {
                 ["jfk", "dca"],
                 ["dca", "las"],
                 ["las", "lax"],
-                ["hsh", "1g4"],
+                ["hsh", "gcw"],
                 ["1g4", "hsh"],
                 ["lax", "syd"],
                 ["syd", "mel"],
