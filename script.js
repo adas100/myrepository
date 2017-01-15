@@ -1,47 +1,68 @@
 var airports = {};
 
-// sweden
-airports.arn = { name: "Stockholm Arlanda", coords: {lat: 59.6498, lng: 17.9238} };
-airports.bma = { name: "Stockholm Bromma", coords: {lat: 59.3548, lng: 17.9427} };
-airports.got = { name: "Göteborg Landvetter", coords: {lat: 57.6688, lng: 12.2923} };
-airports.mmx = { name: "Malmö", coords: {lat: 55.5355, lng: 13.3724} };
-airports.nyo = { name: "Stockholm Skavsta", coords: {lat: 58.7890, lng: 16.9154} };
-airports.ume = { name: "Umeå", coords: {lat: 63.7930, lng: 20.2893} };
-
-// usa
-airports.bos = { name: "Boston Logan", coords: {lat: 42.3656, lng: -71.0096} };
-airports.den = { name: "Denver", coords: {lat: 39.8561, lng: -104.6737} };
-airports.iad = { name: "Washington D.C. Dulles", coords: {lat: 38.9531, lng: -77.4565} };
-airports.sfo = { name: "San Francisco", coords: {lat: 37.7749, lng: -122.4194} };
-airports.mia = { name: "Miami", coords: {lat: 25.7959, lng: -80.2870} };
-airports.sea = { name: "Seattle-Tacoma", coords: {lat: 47.4502, lng: -122.3088} };
-airports.lax = { name: "Los Angeles", coords: {lat: 33.9416, lng: -118.4085} };
-airports.jfk = { name: "New York John F. Kennedy", coords: {lat: 40.6413, lng: -73.7781} };
-
-// europe
-airports.aja = { name: "Corsica Ajaccio", coords: {lat: 41.9214, lng: 8.7966} };
-airports.biq = { name: "Biarritz", coords: {lat: 43.4692, lng: -1.5303} };
-airports.cdg = { name: "Paris Charles de Gaulle", coords: {lat: 49.0097, lng: 2.5479} };
-airports.cph = { name: "Copenhagen Kastrup", coords: {lat: 55.6180, lng: 12.6508} };
-airports.dub = { name: "Dublin", coords: {lat: 53.4264, lng: -6.2499} };
-airports.fco = { name: "Rome Leonardo da Vinci–Fiumicino", coords: {lat: 41.7999, lng: 12.2462} };
-airports.hel = { name: "Helsinki", coords: {lat: 60.3210, lng: 24.9529} };
-airports.lhr = { name: "London Heathrow", coords: {lat: 51.4700, lng: -0.4543} };
-airports.lgw = { name: "London Gatwick", coords: {lat: 51.1537, lng: -0.1821} };
-airports.mad = { name: "Madrid", coords: {lat: 40.4839, lng: -3.5680} };
-airports.ory = { name: "Paris Orly", coords: {lat: 48.7262, lng: 2.3652} };
-airports.osl = { name: "Oslo Gardermoen", coords: {lat: 60.1976, lng: 11.1004} };
-airports.szg = { name: "Salzburg Wolfgang Amadeus Mozart", coords: {lat: 47.7926, lng: 13.0029} };
-airports.waw = { name: "Warsaw Chopin", coords: {lat: 52.1672, lng: 20.9679} };
-airports.zrh = { name: "Zürich", coords: {lat: 47.4582, lng: 8.5555} };
+// oceania
+airports.mel = { name: "Melbourne - Tullamarine", coords: {lat: 37.6733, lng: 144.8433} };
+airports.bne = { name: "Brisbane", coords: {lat: 27.3842, lng: 153.1175} };
+airports.ool = { name: "Gold Coast - Coolangatta", coords: {lat: 28.1644, lng: 153.5047} };
+airports.akl = { name: "Auckland", coords: {lat: 37.0081, lng: 174.7917} };
+airports.chc = { name: "Christchurch", coords: {lat: 43.4894, lng: 172.5344} };
+airports.nan = { name: "Nadi", coords: {lat: 17.7553, lng: 177.4433} };
+airports.syd = { name: "Sydney - Kingsford Smith", coords: {lat: 33.9461, lng: 151.1772} };
+airports.cns = { name: "Cairns", coords: {lat: 16.8858, lng: 145.7553} };
+airports.cbr = { name: "Canberra", coords: {lat: 35.3067, lng: 149.1950} };
+airports.zqn = { name: "Queenstown", coords: {lat: 45.0211, lng: 168.7392} };
 
 // asia
-airports.hkg = { name: "Hong Kong", coords: {lat: 22.3080, lng: 113.9185} };
-airports.pek = { name: "Beijing", coords: {lat: 40.0799, lng: 116.6031} };
+airports.sin = { name: "Singapore - Changi", coords: {lat: 1.3592, lng: 103.9894} };
+airports.ccu = { name: "Kolkata - Netaji Subhas Chandra Bose", coords: {lat: 22.6547, lng: 88.4467} };
+airports.dmk = { name: "Bangkok - Don Mueang", coords: {lat: 13.6811, lng: 100.7472} };
+airports.del = { name: "Delhi - Indira Gandhi", coords: {lat: 28.5686, lng: 77.1122} };
+airports.dxb = { name: "Dubai", coords: {lat: 25.2528, lng: 55.3644} };
+airports.auh = { name: "Abu Dhabi", coords: {lat: 24.4331, lng: 54.6511} };
+airports.amm = { name: "Amman - Queen Alia", coords: {lat: 31.7225, lng: 35.9933} };
+airports.sgn = { name: "Ho Chi Minh City - Tan Son Nhat", coords: {lat: 10.8189, lng: 106.6519} };
+airports.han = { name: "Hanoi - Noi Bai", coords: {lat: 21.2211, lng: 105.8072} };
+airports.dad = { name: "Da Nang", coords: {lat: 16.0439, lng: 108.1994} };
+airports.nrt = { name: "Tokyo - Narita", coords: {lat: 35.7653, lng: 140.3856} };
+airports.hkg = { name: "Hong Kong - Chek Lap Kok", coords: {lat: 22.3089, lng: 113.9147} };
+airports.lko = { name: "Lucknow", coords: {lat: 26.7606, lng: 80.8894} };
+airports.asr = { name: "Kayseri", coords: {lat: 38.7703, lng: 35.4956} };
+airports.adb = { name: "Izmir - Adnan Menderes", coords: {lat: 38.2925, lng: 27.1569} };
+airports.nav = { name: "Nevsehir - Kapadokya", coords: {lat: 38.7719, lng: 34.5344} };
+airports.dps = { name: "Denpasar - Ngurah Rai", coords: {lat: 8.7481, lng: 115.1672} };
+airports.kix = { name: "Osaka - Kansai", coords: {lat: 34.4272, lng: 135.2442} };
+
+// north america
+airports.hnl = { name: "Honolulu", coords: {lat: 21.3178, lng: 157.9203} };
+airports.sfo = { name: "San Francisco", coords: {lat: 37.6189, lng: 122.3753} };
+airports.jfk = { name: "New York - JFK", coords: {lat: 40.6400, lng: 73.7786} };
+airports.dca = { name: "Washington - National", coords: {lat: 38.8514, lng: 77.0378} };
+airports.las = { name: "Las Vegas - McCarran", coords: {lat: 36.0800, lng: 115.1522} };
+airports.lax = { name: "Los Angeles", coords: {lat: 33.9428, lng: 118.4092} };
+airports.hsh = { name: "Las Vegas - Henderson", coords: {lat: 35.9728, lng: 115.1344} };
+airports.1g4 = { name: "Peach Springs - Grand Canyon West", coords: {lat: 35.9861, lng: 113.8169} };
+
+// europe
+airports.fco = { name: "Rome - Fiumicino", coords: {lat: 41.8044, lng: 12.2508} };
+airports.ist = { name: "Istanbul - Ataturk", coords: {lat: 40.9761, lng: 28.8139} };
+airports.mad = { name: "Madrid - Barajas", coords: {lat: 40.4936, lng: 3.5667} };
+airports.cdg = { name: "Paris - Charles de Gaulle", coords: {lat: 49.0097, lng: 2.5478} };
+airports.txl = { name: "Berlin - Tegel", coords: {lat: 52.5597, lng: 13.2878} };
+airports.lhr = { name: "London - Heathrow", coords: {lat: 51.4775, lng: 0.4614} };
+airports.ams = { name: "Amsterdam - Schiphol", coords: {lat: 52.3089, lng: 4.7639} };
+airports.bcn = { name: "Barcelona - El Prat", coords: {lat: 41.2969, lng: 2.0783} };
+airports.vce = { name: "Venice - Marco Polo", coords: {lat: 45.5053, lng: 12.3519} };
 
 // africa
-airports.rmf = { name: "Marsa Alam", coords: {lat: 25.5588, lng: 34.5882} };
-airports.lpa = { name: "Gran Canaria Las Palmas", coords: {lat: 27.9332, lng: -15.3877} };
+airports.nbo = { name: "Nairobi - Jomo Kenyatta", coords: {lat: 1.3192, lng: 36.9278} };
+airports.tip = { name: "Tripoli", coords: {lat: 32.6636, lng: 13.1589} };
+airports.cmn = { name: "Casablanca - Mohammed V", coords: {lat: 33.3675, lng: 7.5900} };
+airports.lxr = { name: "Luxor", coords: {lat: 25.6711, lng: 32.7067} };
+airports.uas = { name: "Samburu - Buffalo Spring", coords: {lat: 0.5333, lng: 37.5333} };
+airports.cai = { name: "Cairo", coords: {lat: 30.1219, lng: 31.4056} };
+airports.bko = { name: "Bamako - Modiba Keita", coords: {lat: 12.5336, lng: 7.9500} };
+airports.abs = { name: "Abu Simbel", coords: {lat: 22.3758, lng: 31.6117} };
+airports.wil = { name: "Nairobi - Wilson", coords: {lat: 1.3217, lng: 36.8147} };
 
 var map, icon_filled, icon_filled_05, icon_filled_01, flights = [], airport_markers = {};
 
@@ -299,43 +320,88 @@ function initMap() {
   map.setOptions({styles: retro});
 
   var paths = [
-                ["arn", "bos"],
-                ["arn", "hel"],
-                ["hel", "hkg"],
-                ["arn", "pek"],
-                ["pek", "hkg"],
-                ["sfo", "cph"],
-                ["cph", "arn"],
-                ["bos", "den"],
-                ["arn", "lhr"],
-                ["lhr", "iad"],
-                ["bos", "lgw"],
-                ["lgw", "arn"],
-                ["bos", "mia"],
-                ["bos", "sea"],
-                ["sea", "sfo"],
-                ["lax", "bos"],
-                ["arn", "jfk"],
-                ["nyo", "biq"],
-                ["arn", "zrh"],
-                ["zrh", "bos"],
-                ["arn", "cdg"],
-                ["cdg", "bos"],
-                ["arn", "ory"],
-                ["arn", "rmf"],
-                ["bma", "mmx"],
-                ["arn", "osl"],
-                ["arn", "got"],
-                ["arn", "ume"],
-                ["nyo", "lpa"],
-                ["arn", "fco"],
-                ["arn", "szg"],
-                ["arn", "waw"],
-                ["arn", "dub"],
-                ["nyo", "aja"],
-                ["mia", "mad"],
-                ["mad", "arn"],
-                ["cph", "lhr"]
+                ["mel", "sin"],
+                ["mel", "dmk"],
+                ["sin", "ccu"],
+                ["sin", "del"],
+                ["ccu", "del"],
+                ["sin", "lhr"],
+                ["dmk", "ccu"],
+                ["sin", "mel"],
+                ["dmk", "mel"],
+                ["fco", "sin"],
+                ["del", "lko"],
+                ["dmk", "bne"],
+                ["bne", "mel"],
+                ["mel", "syd"],
+                ["syd", "ool"],
+                ["sin", "dxb"],
+                ["dxb", "mel"],
+                ["dxb", "cai"],
+                ["cai", "nbo"],
+                ["nbo", "dxb"],
+                ["mel", "auh"],
+                ["auh", "ist"],
+                ["ist", "ams"],
+                ["ams", "ist"],
+                ["ist", "amm"],
+                ["amm", "tip"],
+                ["tip", "fco"],
+                ["fco", "ist"],
+                ["ist", "fco"],
+                ["ist", "asr"],
+                ["ist", "adb"],
+                ["nav", "ist"],
+                ["fco", "cmn"],
+                ["cmn", "mad"],
+                ["mad", "bcn"],
+                ["bcn", "mad"],
+                ["mad", "cmn"],
+                ["cmn", "cdg"],
+                ["cdg", "bko"],
+                ["bko", "cdg"],
+                ["lxr", "abs"],
+                ["uas", "wil"],
+                ["cdg", "txl"],
+                ["txl", "lhr"],
+                ["lhr", "auh"],
+                ["auh", "mel"],
+                ["cdg", "vce"],
+                ["mel", "sgn"],
+                ["sgn", "han"],
+                ["han", "dad"],
+                ["dad", "sgn"],
+                ["sgn", "mel"],
+                ["mel", "dps"],
+                ["dps", "mel"],
+                ["mel", "ool"],
+                ["ool", "mel"],
+                ["syd", "mel"],
+                ["mel", "cbr"],
+                ["cbr", "mel"],
+                ["cns", "mel"],
+                ["ool", "cns"],
+                ["mel", "hnl"],
+                ["hnl", "sfo"],
+                ["sfo", "jfk"],
+                ["jfk", "dca"],
+                ["dca", "las"],
+                ["las", "lax"],
+                ["hsh", "1g4"],
+                ["1g4", "hsh"],
+                ["lax", "syd"],
+                ["syd", "mel"],
+                ["mel", "akl"],
+                ["akl", "zqn"],
+                ["chc", "akl"],
+                ["akl", "nan"],
+                ["nan", "syd"],
+                ["syd", "mel"],
+                ["mel", "sin"],
+                ["sin", "kix"],
+                ["nrt", "hkg"],
+                ["hkg", "sin"],
+                ["sin", "mel"],
               ];
   for (var i=0; i < paths.length; i++) {
     newflight(paths[i]);
